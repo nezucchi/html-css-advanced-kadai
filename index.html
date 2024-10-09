@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>13章課題</title>
+    <meta name="description" content="このページは13章の課題です。">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, instial-scale=1.0">
+    
+</head>
+<body>
+    <header>
+        <!-- ロゴ -->
+         <a href="index.html" id="logo">
+            <img src="images/logo.png" alt="トップページに戻る">
+         </a>
+         <!-- pc用ナビゲーション -->
+          <nav id="nav-pc">
+            <ul>
+                <li><a href="index.html#concpt">CONCEPT</a></li>
+                <li><a href="index.html#product">PRODUCT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+          <!-- スマホ用メニューボタン -->
+          <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img src="images/button-menu.png" alt="ナビゲーションを開く">
+           </button>
+           <!-- スマホ用ナビゲーション -->
+           <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+              <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+            </button>
+            <nav>
+                <ul>
+                  <li>
+                    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+                  </li>
+                  <li><a class="menu" href="index.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a></li>
+                  <li><a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
+                  <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+                </ul>
+              </nav>
+      
+    </header>
+    <main>
+        <h3>Organic Cafe</h3>
+        <a>自家焙煎コーヒーが買えるお店</a>
+        <img src="images/main-image.jpg">
+
+    </main>
+</body>
+</html>
